@@ -101,6 +101,10 @@ app.get('/', (req, res) => {
     res.send('server running');
 });
 
+app.get('/hero', (req, res) => {
+    res.send('Heroku updated changes');
+})
+
 app.listen(port, () => {
     console.log('Listening to port', port);
 });
